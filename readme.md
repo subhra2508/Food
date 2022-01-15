@@ -21,3 +21,11 @@ onEndEditing={onTermSubmit}
 - separate library for making requests
 - Easy to use,sensible defaults
 - Increase our app size (very,very slightly)
+
+### current flow in searchscreen component :
+
+- searchscreen function called
+- searchApi called immediately
+- make request to yelp api
+- get search results,call setter
+- updated state causes component to rerender
